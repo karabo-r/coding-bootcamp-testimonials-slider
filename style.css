@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-position-y: -10%;
+}
+
+.container {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  height: 68%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+}
+
+.profile-info,
+.profile-image {
+  height: 100%;
+  width: 50%;
+}
+
+.profile-info {
+  background-image: url("/images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position-x: 25%;
+  background-position-y: 25%;
+  background-size: 25%;
+  align-items: center;
+}
+
+.profile-image {
+  background-image: url("/images/image-tanya.jpg");
+  border-radius: 10px;
+}
+
+.name-container {
+  display: flex;
+}
+
+#comment {
+  position: absolute;
+  line-height: 45px;
+  font-size: 2.2rem;
+  left: 2.2%;
+  width: 55%;
+  top: 30%;
+}
