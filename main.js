@@ -4,15 +4,16 @@ let profile_job_title = document.getElementById("job-title");
 let btn = document.getElementById("btn");
 
 let request = new Request("./profiles.json");
+let trackIdNumber = 0;
 
-fetch(request)
-  .then((resp) => {
-    return resp.json();
+fetch(request).then((resp) =>
+  resp.json().then((data) => {
+    appendData(data);
   })
-  .then((data) => {
-    for (i = 0; i < data.length; i++) {
-      profile_name.innerHTML = data[i].name;
-      profile_job_title.innerHTML = data[i].job_title;
-      profile_comment.innerHTML = data[i].comment;
-    }
-  });
+);
+
+const appendData = (data) => {
+  profile_name.innerHTML = data[trackIdNumber].name;
+  profile_job_title.innerHTML = data[trackIdNumber].job_title;
+  profile_comment.innerHTML = data[trackIdNumber].comment;
+};
