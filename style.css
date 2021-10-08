@@ -34,7 +34,7 @@ body {
 }
 
 .profile-info,
-.profile-image {
+#profile-image {
   height: 100%;
   width: 50%;
 }
@@ -42,30 +42,33 @@ body {
 .profile-info {
   background-image: url("/images/pattern-quotes.svg");
   background-repeat: no-repeat;
-  background-position-x: 25%;
-  background-position-y: 25%;
-  background-size: 25%;
+  background-position-x: 18%;
+  background-position-y: 20%;
+  background-size: 23%;
 }
 
-.profile-image {
-  background-image: url("/images/image-tanya.jpg");
+#profile-image {
   border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-size: cover;
 }
 
 .name-container {
   align-items: center;
   position: absolute;
   font-size: 1.5rem;
-  margin-left: 2%;
+  margin-left: -20px;
   top: 75%;
 }
 
 #comment {
   position: absolute;
   line-height: 40px;
-  font-size: 2rem;
   font-weight: 300;
-  left: 2.2%;
+  font-size: 2rem;
+  left: -20px;
   width: 60%;
   top: 30%;
 }
@@ -80,4 +83,34 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   opacity: 50%;
+}
+
+#slider {
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  width: 110px;
+  height: 55px;
+  left: 55%;
+  top: 95%;
+}
+
+.prev-arrow,
+.next-arrow {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 20px;
+  width: 13px;
+}
+
+.prev-arrow {
+  background-image: url("/images/icon-prev.svg");
+}
+
+.next-arrow {
+  background-image: url("/images/icon-next.svg");
 }
