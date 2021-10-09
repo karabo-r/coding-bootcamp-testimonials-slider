@@ -1,4 +1,6 @@
 // Tried storing the profile data in a json file but got complicated. Profiles object looks messy thou ,sorry 💔
+// A design pattern is needed
+
 const profiles = [
   {
     id: 1,
